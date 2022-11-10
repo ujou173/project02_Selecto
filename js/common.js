@@ -18,7 +18,7 @@ $(function () {
     },
   });
 
-  var sec4_swiper = new Swiper(".real_interview", {
+  var interview_swiper = new Swiper(".real_interview", {
     loop: true,
     pagination: {
       el: ".sec4_pg",
