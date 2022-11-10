@@ -1,0 +1,565 @@
+@charset 'utf-8';
+
+/* 에스코어드림 */
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 넥슨 lv2 고딕 */
+@font-face {
+  font-family: "NEXON Lv2 Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  color: #505050;
+  --font_ScoreDream: "S-CoreDream-4Regular";
+  --font_nexon: "NEXON Lv2 Gothic";
+  --font_size_H1: 48px;
+  --font_size_H2: 32px;
+  --font_size_H3: 24px;
+  --font_size_H4: 16px;
+  --font_size_b1: 24px;
+  --font_size_b2: 16px;
+  --font_size_b3: 14px;
+  --point_color: #bb0712;
+  --main_color1: #f8eee8;
+  --main_color2: #f2f8fe;
+  --main_color3: #fff9f2;
+  --main_color4: #6e0f16;
+  --main_color5: rgba(244, 214, 95, 0.5);
+  --color_black: #202020;
+  --color_white: #ffffff;
+  --color_gray: #bebebe;
+  --speed_03: 0.3s;
+}
+
+.mw {
+  width: calc(100% - 2rem);
+  max-width: 1350px;
+  margin: auto;
+}
+
+.font_red {
+  color: var(--point_color);
+}
+
+img {
+  width: 100%;
+}
+
+/* header start */
+.hd {
+  border: 1px solid red;
+}
+.hd .hd_top {
+  border: 1px solid violet;
+  text-align: center;
+  position: relative;
+}
+
+.hd .hd_top a {
+  border: 1px solid red;
+  display: inline-block;
+}
+
+.hd .sns_icons {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.hd .sns_icons a {
+  padding: 0 0.5rem;
+}
+
+.hd .hd_bottom {
+  border: 1px solid green;
+}
+.hd .gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hd .gnb > li {
+  border: 1px solid saddlebrown;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.hd .gnb > li > a {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  border: 1px solid gold;
+}
+
+.hd .sub {
+  border: 1px solid red;
+  position: absolute;
+  width: 100%;
+  line-height: 250%;
+  overflow: hidden;
+  display: none;
+  /* background-color: var(--color_gray); */
+  /* color: var(--color_white); */
+}
+
+/* header end */
+/* floating menu */
+
+/* 미완성 stick 쓰는 방법 알아볼 것 */
+.floating {
+  border: 1px solid red;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  position: absolute;
+  right: 2%;
+}
+
+.floating .bussines {
+  position: sticky;
+  top: 50px;
+}
+
+.floating > div > div {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.floating > div p {
+  /* border: 2px solid black; */
+  display: inline-block;
+  text-align: center;
+}
+
+.floating img {
+  width: 50px;
+}
+
+/* floating end */
+/* section 1 start */
+
+.sec1 li {
+  padding-top: 20%;
+}
+
+.sec1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sec1 .sec1_pg > span {
+  background-color: var(--point_color);
+}
+
+/* section 1 end */
+/* section 2 start */
+
+.sec2 {
+  margin: 5% auto;
+}
+
+.sec2 h2,
+.sec2 .sec2_inner > p {
+  text-align: center;
+}
+
+.sec2 h2 {
+  font-size: var(--font_size_H1);
+  font-family: var(--font_ScoreDream);
+  font-weight: bold;
+}
+
+.sec2 .sec2_inner > p {
+  font-size: var(--font_size_b2);
+  font-family: var(--font_nexon);
+}
+
+.sec2 .brand_desc {
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec2 .brand_desc .brand_txt {
+  /* border: 3px solid lavender; */
+  flex: 1;
+  padding-left: 5%;
+  font-size: var(--font_size_b1);
+  font-family: var(--font_nexon);
+}
+
+.sec2 .value_con {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec2 .value_con article {
+  border: 1px solid slateblue;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.sec2 .value_con article:first-of-type {
+  margin-right: 2rem;
+}
+
+.sec2 .value_img {
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  padding-top: 40%;
+}
+
+.sec2 .value_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sec2 .special_tea img {
+  width: 300%;
+}
+
+.sec2 .rosting img {
+  width: 170%;
+}
+
+.sec2 .value_desc {
+  border: 1px solid green;
+  flex: 1;
+  padding: 0 2%;
+  position: relative;
+}
+
+.sec2 .value_desc h3 {
+  padding-top: 3%;
+  font-size: var(--font_size_H3);
+  font-family: var(--font_ScoreDream);
+}
+
+.sec2 .value_desc p {
+  font-family: var(--font_nexon);
+  font-size: var(--font_size_b3);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  margin-bottom: 2.5rem;
+  border: 1px solid bisque;
+}
+
+.sec2 .value_desc a {
+  border: 1px solid salmon;
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  text-align: center;
+  font-size: var(--font_size_b2);
+  font-family: var(--font_nexon);
+  background-color: var(--main_color4);
+  color: var(--color_white);
+  padding: 0.3rem 3rem 0.3rem 1rem;
+  border-radius: 999px;
+}
+
+/* section 2 end */
+/* section 3 start */
+
+.sec3 {
+  background-color: var(--main_color1);
+  padding: 5% 0;
+}
+
+.sec3 img {
+  width: auto;
+  height: 100%;
+}
+
+.sec3 h2 {
+  text-align: center;
+  font-size: var(--font_size_H1);
+  font-family: var(--font_ScoreDream);
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+
+.sec3 .sec3_btns {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid red; */
+  padding-bottom: 3%;
+}
+
+/* .menu_btn = button */
+.sec3 .menu_btn {
+  background-color: transparent;
+  font-size: var(--font_size_H2);
+  font-family: var(--font_ScoreDream);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 1rem;
+  /* border: 1px solid blue; */
+}
+
+.sec3 .menu_btn::before,
+.sec3 .menu_btn::after {
+  content: "";
+  background-color: var(--point_color);
+  position: absolute;
+  transition: var(--speed_03);
+}
+
+.sec3 .menu_btn::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10%;
+  right: 0;
+  opacity: 0;
+}
+
+.sec3 .menu_btn::after {
+  width: 0;
+  height: 2px;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sec3 .menu_btn:hover::before {
+  opacity: 1;
+}
+
+.sec3 .menu_btn.on::before {
+  opacity: 1;
+}
+
+.sec3 .menu_btn.on::after {
+  width: calc(100% - 1rem);
+}
+
+.sec3 .menu_con {
+  display: none;
+  position: relative;
+}
+
+.sec3 .menu_con.on {
+  display: block;
+}
+
+.sec3 .inner {
+  /* border: 1px solid seagreen; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.sec3 .inner::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  background-color: var(--main_color5);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: var(--speed_03);
+}
+
+.sec3 .inner:hover::after {
+  opacity: 1;
+}
+
+.sec3 .inner .menu_title {
+  font-size: var(--font_size_H3);
+  font-family: var(--font_ScoreDream);
+  color: var(--color_black);
+  padding: 1rem 0;
+}
+
+.sec3 .inner .menu_desc {
+  font-size: var(--font_size_b2);
+  font-family: var(--font_nexon);
+  text-align: center;
+}
+
+.sec3 .sec3_prev::after,
+.sec3 .sec3_next::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.sec3 .sec3_next::after {
+  right: -200%;
+  background-image: url(./resource/right_arrow.png);
+}
+
+.sec3 .sec3_prev::after {
+  left: -200%;
+  background-image: url(./resource/left_arrow.png);
+}
+/* 화살표 가상태그 이미지로 하면 안됨 방법 찾는 중 */
+.sec3 .sec3_prev::after:hover,
+.sec3 .sec3_next::after:hover {
+}
+
+/* section 3 end */
+/* section 4 start */
+
+.sec4 {
+  padding: 5% 0;
+}
+
+.sec4 h2 {
+  text-align: center;
+  font-size: var(--font_size_H1);
+  font-family: var(--font_ScoreDream);
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+
+.sec4 .grid_box {
+  width: 100%;
+  border: 3px solid lightblue;
+  display: grid;
+  grid-template-columns: 530px 800px;
+  grid-template-rows: 300px 30px 100px 230px;
+  gap: 20px;
+}
+
+.sec4 .grid_box > article {
+  overflow: hidden;
+}
+
+.sec4 .open_cafe {
+  /* background-color: turquoise; */
+  grid-row: span 2;
+  position: relative;
+}
+
+.sec4 .open_cafe img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.sec4 .open_cafe p:first-of-type,
+.sec4 .open_cafe p:last-of-type {
+  position: absolute;
+  color: var(--color_white);
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.sec4 .open_cafe p:first-of-type {
+  top: 5%;
+  left: 5%;
+  font-size: var(--font_size_H1);
+  font-family: var(--font_ScoreDream);
+  font-weight: bold;
+}
+
+.sec4 .open_cafe p:last-of-type {
+  bottom: 5%;
+  right: 5%;
+  font-size: var(--font_size_b1);
+  font-family: var(--font_nexon);
+}
+
+.sec4 .interview_con {
+  background-color: var(--main_color1);
+}
+
+.sec4 .real_interview li {
+  display: flex;
+  position: relative;
+}
+
+.sec4 .interview_img,
+.sec4 .interview_text {
+  flex: 1;
+}
+
+.sec4 .interview_text {
+  padding: 2rem;
+}
+
+.sec4 .interview_text p:first-of-type {
+  font-size: var(--font_size_H3);
+  font-family: var(--font_ScoreDream);
+  word-break: keep-all;
+  padding-bottom: 10%;
+}
+
+.sec4 .interview_text p:last-of-type {
+  font-size: var(--font_size_b2);
+  font-family: var(--font_nexon);
+}
+
+.sec4 .interview_text a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.sec4 .interview_hr {
+  border: none;
+  border-bottom: 1px dotted var(--color_gray);
+}
+
+.sec4 .meeting_banner {
+  background-color: antiquewhite;
+  grid-row: span 2;
+}
+
+.sec4 .notice {
+  background-color: royalblue;
+  grid-row: span 2;
+}
+
+.sec4 .recommend {
+  background-color: teal;
+}
+
+/* sec4 end */
+/* footer start */
+/* footer end */
