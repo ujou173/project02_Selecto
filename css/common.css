@@ -427,12 +427,12 @@ img {
 
 .sec3 .sec3_next::after {
   right: -200%;
-  background-image: url(./resource/right_arrow.png);
+  background-image: url(../resource/right_arrow.png);
 }
 
 .sec3 .sec3_prev::after {
   left: -200%;
-  background-image: url(./resource/left_arrow.png);
+  background-image: url(../resource/left_arrow.png);
 }
 /* 화살표 가상태그 이미지로 하면 안됨 방법 찾는 중 */
 .sec3 .sec3_prev::after:hover,
