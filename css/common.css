@@ -805,6 +805,7 @@ img {
   /* background-color: turquoise; */
   grid-row: span 2;
   position: relative;
+  border: 1px solid red;
 }
 
 .sec4 .open_cafe img {
@@ -1381,6 +1382,12 @@ img {
     row-gap: 1.5%;
   }
 
+  /* 그리드 오류. 높이가 지정되지 않은 듯
+      repeat 함수를 다르게 바꿔보거나 아니면 암시적 영역을 지정하는 방식으로 해결 가능할 듯 */
+  .sec4 .open_cafe {
+    padding-top: 100%;
+  }
+
   .sec4 .interview_con {
     grid-column: span 1;
   }
@@ -1394,34 +1401,3 @@ img {
   }
 }
 
-/* @media (max-width: 800px) {
-  .floating {
-    display: none;
-  }
-
-  .sec2 h2 {
-    font-size: var(--font_size_H3);
-  }
-
-  .sec2 .sec2_h2_wrap p {
-    font-size: 0.7rem;
-  }
-
-  .sec2 .brand_desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sec2 .brand_desc > div:nth-of-type(1) {
-    width: 10%;
-  }
-
-  .sec2 .brand_desc img {
-    width: 100%;
-  }
-
-  .sec2 .brand_desc .brand_txt {
-    padding-left: 0;
-  }
-} */
