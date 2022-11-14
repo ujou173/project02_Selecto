@@ -12,11 +12,15 @@ $(function () {
     },
   });
 
-  var menu_swiper = new Swiper(".sec3_slide", {
-    slidesPerView: 2,
+  var new_swiper = new Swiper(".sec3_slide_new", {
+    slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
     breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
       670: {
         slidesPerView: 3,
         spaceBetween: 20,
@@ -27,8 +31,80 @@ $(function () {
       },
     },
     navigation: {
-      nextEl: ".sec3_next",
-      prevEl: ".sec3_prev",
+      nextEl: ".sec3_next_new",
+      prevEl: ".sec3_prev_new",
+    },
+  });
+
+  var hot_swiper = new Swiper(".sec3_slide_hot", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      670: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      850: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+    navigation: {
+      nextEl: ".sec3_next_hot",
+      prevEl: ".sec3_prev_hot",
+    },
+  });
+
+  var ice_swiper = new Swiper(".sec3_slide_ice", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      670: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      850: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+    navigation: {
+      nextEl: ".sec3_next_ice",
+      prevEl: ".sec3_prev_ice",
+    },
+  });
+
+  var ade_swiper = new Swiper(".sec3_slide_ade", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      670: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      850: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+    navigation: {
+      nextEl: ".sec3_next_ade",
+      prevEl: ".sec3_prev_ade",
     },
   });
 
@@ -43,6 +119,10 @@ $(function () {
       clickable: true,
       dynamicBullets: true,
     },
+  });
+
+  $(".m_floating_btn").click(function () {
+    $(".m_floating_btn").toggleClass("on");
   });
 
   $(".sec3_btns > button").click(function () {
