@@ -70,6 +70,16 @@ img {
   left: 0;
 }
 
+.hd::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: var(--color_light_gray);
+  bottom: 0;
+  left: 0;
+}
+
 .hd .hd_top {
   /* border: 1px solid violet; */
   text-align: center;
@@ -107,6 +117,7 @@ img {
   align-items: center;
   font-size: var(--font_size_H4);
   font-family: var(--font_ScoreDream);
+  position: relative;
 }
 
 .hd .gnb > li {
@@ -115,6 +126,7 @@ img {
   text-align: center;
   position: relative;
   white-space: nowrap;
+  z-index: 10;
 }
 
 .hd .gnb > li:hover {
@@ -125,7 +137,13 @@ img {
   display: block;
   width: 100%;
   line-height: 40px;
+  border-left: 1px solid var(--color_light_gray);
+  /* border-bottom: 1px solid var(--color_light_gray); */
   /* border: 1px solid gold; */
+}
+
+.hd .gnb > li:last-of-type > a {
+  border-right: 1px solid var(--color_light_gray);
 }
 
 .hd .gnb > li:hover > a {
@@ -133,13 +151,12 @@ img {
 }
 
 .hd .sub {
-  /* border: 1px solid red; */
   position: absolute;
   width: 100%;
   height: 0;
   line-height: 250%;
   overflow: hidden;
-  z-index: 10;
+  z-index: -1;
   transition: var(--speed_03);
   background-color: var(--color_white);
 }
@@ -148,13 +165,17 @@ img {
   height: 500%;
 }
 
+.hd .gnb > li:first-of-type .sub {
+  border-left: 1px solid var(--color_light_gray);
+}
+
 .hd .sub::before {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: var(--color_gray);
+  background-color: var(--color_light_gray);
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 }
 
@@ -162,18 +183,36 @@ img {
   content: "";
   position: absolute;
   top: 3%;
-  left: 0;
+  right: 0;
   width: 1px;
   height: 95%;
-  background-color: var(--color_gray);
+  background-color: var(--color_light_gray);
 }
 
-.hd .gnb > li:first-of-type .sub::after {
-  display: none;
+.hd .gnb > li:nth-of-type(5) .sub::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--color_light_gray);
+}
+
+.hd .gnb > li:nth-of-type(5) .sub::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  width: 500%;
+  height: 1px;
+  background-color: var(--color_light_gray);
 }
 
 .hd .sub a {
-  /* border: 1px solid red; */
   display: block;
   width: 100%;
   position: relative;
