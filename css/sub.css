@@ -173,8 +173,8 @@
 }
 
 .sub_sec3 {
-  border: 1px solid red;
   position: relative;
+  padding-bottom: 3%;
 }
 
 .sub_sec3 h2 {
@@ -185,14 +185,13 @@
 }
 
 .sub_sec3 article {
-  border: 1px solid green;
   width: 100%;
   margin: auto;
   padding-top: 65vh;
   position: relative;
 }
 
-.sub_sec3 article > div {
+.sub_sec3 article .day {
   border: 1px solid var(--color_light_gray);
   padding: 0.5rem 1rem;
   width: 20%;
@@ -202,7 +201,7 @@
   left: 2rem;
 }
 
-.sub_sec3 article > div::before {
+.sub_sec3 article .day::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -244,22 +243,44 @@
   flex-direction: column;
 }
 
-.sub_sec3 .day1 {
+.sub_sec3 .day.day1 {
   top: 10%;
   left: 15%;
 }
 
-.sub_sec3 .day2 {
+.sub_sec3 .day.day2 {
   top: 10%;
   left: 40%;
 }
 
-.sub_sec3 .day3 {
+.sub_sec3 .day.day3 {
   top: 10%;
   left: 65%;
 }
 
-.sub_sec3 .day4 {
+.sub_sec3 .day.day4 {
   top: 57%;
   left: 65%;
+}
+
+.sub_sec3 .duddle1 {
+  position: absolute;
+  background-image: url(../resource/presentation.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15%;
+  height: 40%;
+  bottom: 5%;
+  left: 17%;
+}
+
+.sub_sec3 .duddle2 {
+  position: absolute;
+  background-image: url(../resource/sit_human.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12%;
+  height: 30%;
+  bottom: 5%;
+  left: 43%;
 }
